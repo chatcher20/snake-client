@@ -16,9 +16,9 @@ const connect = function () {
   });
   
   conn.on("data", (data) => {     // inside the connect function, use the .on method on our conn object to register a "connect" handler (a callback function)
-    console.log(data.toString());
+    
     console.log("You are hilarious!");
-    conn.end();
+    
   });
 
   return conn;
